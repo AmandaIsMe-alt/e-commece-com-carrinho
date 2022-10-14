@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fontawesome.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lista de Produtos</title>
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header>
+      <h1>Shop now</h1>
+    </header>
+    <!-- PARTE PRINCIPAL -->
+    <main>
+      <section class="filtersContainer">
+        <div id="botoesContainer">
+          <button class="estiloGeralBotoes estiloGeralBotoes--filter botoesClickStyle">
+            Todos Produtos
+          </button>
+          <button class="estiloGeralBotoes estiloGeralBotoes--filter">
+            Hortifruti
+          </button>
+          <button class="estiloGeralBotoes estiloGeralBotoes--filter">
+            Panificadora
+          </button>
+          <button class="estiloGeralBotoes estiloGeralBotoes--filter">
+            Laticínios
+          </button>
+        </div>
+
+        <div class="containerBuscaPorNome">
+          <input
+            type="text"
+            placeholder="Pesquisar por"
+            class="campoBuscaPorNome"
+            onkeyup="pesquisarNaPagina()"
+          />
+          <button
+            class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome"
+          >
+            <img src="./src/img/search.png" alt="lupa" />
+          </button>
+        </div>
+      </section>
+
+      <!--FLEXBOX CONTEUDO PÁGINA-->
+      <div class="conteudo__pagina">
+        <!-- CONTAINER DE PRODUTOS -->
+        <section class="containerVitrine">
+          <div class="containerListaProdutos">
+            <ul class="produtos">
+            
+            </ul>
+          </div>
+        </section>
+
+        <!--CONTAINER DO CARRINHO-->
+        <section class="priceContainer">
+          <div class="price_cabecalho">
+              <img src="./img-carrinho/carrinho.png" alt="Ícone de Carrinho">
+              <h4>Carrinho</h4>
+          </div>
+
+          <ul>
+            <li class="carrinho-vazio">
+              <img src="./img-carrinho/shopping-bag.png">
+                <h5>Por enquanto não temos produtos no carrinho</h5>
+            </li>
+          </ul>
+
+          <div class="quantidade__produtos" style="display: none;">
+            <p>Quantidade</p>
+            <span>0</span>
+          </div>
+
+          <div class="soma__produtos" style="display: none;">
+            <p>Total</p>
+            <p>R$ <span>0,00</span></p>
+          </div>
+        </section>
+      </div>
+
+    </main>
+
+    <script src="./src/js/dataProdutos.js"></script>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
