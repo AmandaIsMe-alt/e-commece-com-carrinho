@@ -28,5 +28,6 @@ Link para visualizar a aplicação: https://amandaisme-alt.github.io/e-commece-c
 Para iniciar a aplicação basta seguir o scrip abaixo:
 
 Clone o repositório na sua máquina, em seguida abra com o Visual Studio Code e clica em "Go live" que esta aparecendo no canto direito inferior, acima da sua barra de tarefas.
+
 OBS: Certifique-se de ter a extensão Live Server instalada no seu VSCode.
 #
