@@ -7,7 +7,7 @@ Algumas das funcionalidades:
 - Preço Total: o cálculo é feito em cima dos produtos adicionados no carrinho.
 É uma aplicação bem simples de quem acabou de aprender JS Vanilla.
 
-Link para visualizar a aplicação:
+Link para visualizar a aplicação: https://amandaisme-alt.github.io/e-commece-com-carrinho/
 
 
  Tecnologias utilizadas:
